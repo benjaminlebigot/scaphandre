@@ -21,14 +21,6 @@ metadata:
     {{- include "labels.common" . | nindent 4 }}
 rules:
 - apiGroups:
-  - extensions
-  resources:
-  - podsecuritypolicies
-  resourceNames:
-  - {{ .Chart.Name }}
-  verbs:
-  - "use"
-- apiGroups:
   - ""
   resources:
   - pods

@@ -1,6 +1,6 @@
 image:
-  name: hubblo/scaphandre
-  tag: latest
+  name: <a docker registry with docker image built from this branch>
+  tag: main-blb
 
 port: 8080
 
@@ -15,7 +15,8 @@ scaphandre:
   command: prometheus
   args: {}
   extraArgs:
-    containers: true
+    containers:
+    address: 0.0.0.0
 #  rustBacktrace: '1'
 
 # Run as root user to get proper permissions
